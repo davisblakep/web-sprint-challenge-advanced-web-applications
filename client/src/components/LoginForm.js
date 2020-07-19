@@ -61,7 +61,7 @@ const submitForm = (e) => {
         .then(res => {
            console.log("Axios submit form res", res);
            window.localStorage.setItem('token', res.data.payload);
-           setTimeout(()=>{history.push('/dashboard')}, 1000);
+           history.push('/bubbles');
          
         })
         .catch(err => console.log(err))
