@@ -4,12 +4,15 @@ import PrivateRoute from './utils/PrivateRoute';
 
 import Login from "./components/Login";
 import BubblesPage from './components/BubblePage';
+import NavAppBar from './components/NavAppBar'
 import "./styles.scss";
 
 function App() {
   return (
     <Router>
+      <NavAppBar />
       <div className="App">
+        
         <Route exact path="/" component={Login} />
         <PrivateRoute exact path="/bubbles" component={BubblesPage} />
       </div>

@@ -75,9 +75,9 @@ const submitForm = (e) => {
         <Card className={classes.root} style={{opacity: "0.9", marginLeft: "10%"}}>
            <CardContent>
               <Typography variant="h5" component="h2">
-               Login
+               Login To Bubbles
               </Typography>
-              <br />
+              
            <form onSubmit={submitForm} className={classes.form} autoComplete="off">
               <FormControl required>
                  <TextField 
